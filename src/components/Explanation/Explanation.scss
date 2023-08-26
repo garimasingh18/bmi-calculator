@@ -1,0 +1,39 @@
+@import "../../scss/main.scss";
+
+.explanation {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 4.5rem;
+  max-width: 78rem;
+  margin-inline: auto;
+  &__desc {
+    margin-top: 2rem;
+  }
+  @media screen and (min-width: 62.5em) {
+    position: relative;
+    gap: 8rem;
+  }
+  @media screen and (min-width: 43.75em) {
+    padding-inline: clamp(1rem, 14.58vw + -1.92rem, 2.75rem);
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+.explanation:before {
+  @media screen and (min-width: 62.5em) {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transform: translate(-10rem, -10rem);
+    background: url(./../../../public/assets/images/pattern-curved-line-left.svg)
+      no-repeat;
+    background-position: top right;
+  }
+}
+.explanation__img {
+  transform: unset;
+}

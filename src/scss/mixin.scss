@@ -1,0 +1,8 @@
+@function convert($input, $output: rem) {
+  @if (unit($input) == "px") {
+    $result: unit(($input / 16), $output);
+  } @else {
+    $result: unit($input, $output);
+  }
+  @return $result;
+}

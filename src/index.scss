@@ -1,0 +1,164 @@
+@import "./scss/main.scss";
+
+@import "./scss/variables.scss";
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 400 600;
+  src: url("./../public/assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+body {
+  margin-top: 0;
+  padding: 0;
+  font: 400 1rem/150% "Inter", sans-serif;
+  color: $clr-electric-blue;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 110%;
+  color: $clr-gunmetal;
+}
+
+.main-header {
+  text-align: center;
+
+  &__title {
+    font-size: 3rem;
+    letter-spacing: -0.15rem;
+    @media screen and (min-width: 75em) {
+      font-size: 4rem;
+      letter-spacing: -0.2rem;
+    }
+  }
+}
+
+.calculator {
+  &__title {
+    font-size: 1.5rem;
+    letter-spacing: -0.075rem;
+  }
+}
+
+.radio__label {
+  font-weight: 600;
+  line-height: 150%;
+  color: $clr-gunmetal;
+}
+
+.number-input {
+  &__label {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 150%;
+    color: $clr-electric-blue;
+  }
+
+  &__input {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.075rem;
+
+    &::placeholder {
+      color: $clr-gunmetal;
+      opacity: 0.35;
+    }
+  }
+
+  &__unit {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.075rem;
+    color: $clr-blue;
+  }
+}
+
+.result {
+  color: white;
+
+  &__title,
+  &__welcome-title {
+    color: white;
+  }
+
+  &__welcome-title {
+    font-size: 1.5rem;
+    letter-spacing: -0.075rem;
+  }
+
+  &__number {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 110%;
+    letter-spacing: -0.15rem;
+  }
+
+  &__desc {
+    font-size: 0.875rem;
+  }
+}
+
+.explanation {
+  &__title {
+    font-size: 2rem;
+    letter-spacing: -0.1rem;
+  }
+}
+
+.suggestions {
+  &__title {
+    font-size: 1.5rem;
+    letter-spacing: -0.075rem;
+  }
+}
+
+.limitations {
+  text-align: center;
+
+  &__title {
+    font-size: 2rem;
+    letter-spacing: -0.1rem;
+  }
+}
+
+.grid {
+  &__title {
+    font-size: 1.25rem;
+    letter-spacing: -0.0625rem;
+  }
+}
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}

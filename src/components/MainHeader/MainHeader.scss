@@ -1,0 +1,15 @@
+@import "../../scss/main.scss";
+
+.main-header {
+  @media screen and (min-width: 62.5em) {
+    margin-top: 6rem;
+  }
+  &__title {
+    max-width: 11ch;
+  }
+
+  &__desc {
+    margin-top: 2rem;
+    max-width: 44rem;
+  }
+}

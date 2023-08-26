@@ -1,0 +1,41 @@
+@import "../../scss/main.scss";
+
+.number-input {
+  &__label {
+    position: relative;
+  }
+
+  &__input {
+    margin-top: 0.5rem;
+    width: 100%;
+    padding: 1.25rem 2rem 1.25rem 1.5rem;
+    border: 0.0625rem solid $clr-borders;
+    border-radius: 0.75rem;
+    cursor: pointer;
+
+    &:hover {
+      border-color: $clr-blue;
+    }
+  }
+
+  &__unit {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+}
+.number-input__input {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 1.25rem clamp(2rem, 57.14vw + -9.43rem, 4rem) 1.25rem 1.5rem;
+  border: 0.0625rem solid #d8e2e7;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+.number-input__input {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.075rem;
+}
